@@ -8,8 +8,6 @@
         $cnx    ->exec("SET NAMES 'utf8';");
         $id     = $_POST['id'];
         $tache  = $_POST['tache'];
-        echo $id;
-        echo $tache;
         if(strlen($tache) <= 3){
             throw new Exception("La tache doit faire plus de 3 caractères");
         }
