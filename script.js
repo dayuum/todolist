@@ -3,11 +3,15 @@ let message1 = document.getElementById("msg");
 let div = document.getElementById("div");
 let width = screen.width; 
 
-if(width < 500){
+if(width < 500 && document.body.contains(document.getElementById("width1"))){
     document.getElementById("width1").classList.remove("w-50");
     document.getElementById("width1").classList.add("w-75");
+}
+if(width < 500 && document.body.contains(document.getElementById("width2"))){
     document.getElementById("width2").classList.remove("w-50");
     document.getElementById("width2").classList.add("w-75");
+}
+if(width < 500 && document.body.contains(document.getElementById("width3"))){
     document.getElementById("width3").classList.remove("w-50");
     document.getElementById("width3").classList.add("w-75");
 }
