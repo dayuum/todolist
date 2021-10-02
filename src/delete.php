@@ -10,5 +10,5 @@
     $stmt   = $cnx->prepare($sql);
     $stmt   ->execute();
     $_SESSION['message'] = $messageOK;
-    header('location:index.php'); 
+    header('location:../index.php'); 
 ?>

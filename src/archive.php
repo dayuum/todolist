@@ -24,10 +24,10 @@
         $stmt   = $cnx->prepare($sql);
         $stmt   -> execute();
         $_SESSION['message'] = $messageOK;
-        header('location:index.php'); 
+        header('location:../index.php'); 
     }catch(Exception $e){
         $messageKO = "<div id=\"msg\" class=\"alert alert-danger\" role=\"alert\">OOPS - Il y a eu un problème</div>";
         $_SESSION['message'] = $messageKO;
-        header('location:index.php'); 
+        header('location:../index.php'); 
     }
 ?>

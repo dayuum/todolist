@@ -16,10 +16,10 @@
         $stmt   -> bindParam(':tache', $tache);
         $stmt   -> execute();
         $_SESSION['message'] = $messageOK;
-        header('location:index.php');
+        header('location:../index.php');
     }catch(Exception $e){
         $messageKO = "<div id=\"msg\" class=\"alert alert-danger\" role=\"alert\">".$e -> getMessage()."</div>";
         $_SESSION['message'] = $messageKO;
-        header('location:index.php');
+        header('location:../index.php');
     }
 ?>
